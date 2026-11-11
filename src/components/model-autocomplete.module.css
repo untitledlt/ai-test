@@ -1,0 +1,16 @@
+.dropdown {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.option {
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: var(--radius-2);
+  margin: 0;
+  width: 100%;
+}
+
+.option:hover {
+  background: var(--gray-a3);
+}

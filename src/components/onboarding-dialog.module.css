@@ -1,0 +1,43 @@
+.section {
+  padding: var(--space-4);
+  border: 1px solid var(--gray-a5);
+  border-radius: var(--radius-3);
+}
+
+.section p,
+.sync p {
+  line-height: 1.6;
+}
+
+.demo {
+  padding: clamp(20px, 5vw, 28px);
+  border: 2px solid var(--accent-8);
+  background: var(--accent-3);
+}
+
+.demoIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: var(--radius-3);
+  background: var(--accent-9);
+  color: var(--accent-contrast);
+}
+
+.demoButton {
+  width: 100%;
+}
+
+.sync summary {
+  cursor: pointer;
+  font-size: var(--font-size-2);
+  font-weight: var(--font-weight-medium);
+}
+
+.sync summary:focus-visible {
+  outline: 2px solid var(--accent-8);
+  outline-offset: 4px;
+}

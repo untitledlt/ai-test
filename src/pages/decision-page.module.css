@@ -1,0 +1,39 @@
+.layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.formColumn {
+  flex: 0 0 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: sticky;
+  top: 16px;
+}
+
+.resultsColumn {
+  flex: 1;
+  min-width: 0;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .formColumn {
+    position: static;
+    flex: 1 1 auto;
+    width: 100%;
+  }
+
+  .resultsColumn {
+    /* In column direction, flex's cross-axis stretch loses to the results table's
+       min-content width, so the column (and the page with it) grows to fit the table
+       instead of capping at 100% and letting the table's own wrapper scroll. */
+    width: 100%;
+    max-width: 100%;
+  }
+}

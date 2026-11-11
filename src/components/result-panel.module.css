@@ -1,0 +1,27 @@
+.responseCard,
+.reasoningCard {
+  padding: 0;
+}
+
+.sectionHeader {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--gray-a4);
+}
+
+.responseCard .sectionHeader {
+  background: var(--accent-3);
+  color: var(--accent-11);
+  border-bottom-color: var(--accent-a5);
+}
+
+.reasoningCard .sectionHeader {
+  background: var(--gray-3);
+  color: var(--gray-11);
+}
+
+.sectionBody {
+  padding: 16px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  line-height: 1.7;
+}

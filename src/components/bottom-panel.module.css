@@ -1,0 +1,16 @@
+.tabsRoot {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+}
+
+.editorArea {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+}
+
+.editorArea :global(.cm-editor) {
+  height: 100%;
+}

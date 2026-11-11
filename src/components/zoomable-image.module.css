@@ -1,0 +1,28 @@
+.trigger {
+  all: unset;
+  cursor: zoom-in;
+  display: block;
+  border-radius: var(--radius-2);
+}
+
+.trigger:focus-visible {
+  outline: 2px solid var(--accent-9);
+  outline-offset: 2px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4);
+  background: transparent;
+  box-shadow: none;
+}
+
+.fullImage {
+  max-width: 100%;
+  max-height: 85vh;
+  object-fit: contain;
+  display: block;
+  border-radius: var(--radius-3);
+}

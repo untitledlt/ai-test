@@ -1,0 +1,39 @@
+.panel {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--ui-surface);
+  border-top: 1px solid var(--ui-border);
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+}
+
+.handle {
+  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  touch-action: none;
+  cursor: ns-resize;
+  background: var(--ui-border-subtle);
+  flex-shrink: 0;
+}
+
+.handle::after {
+  content: '';
+  width: 36px;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--gray-8);
+  pointer-events: none;
+}
+
+.handle:hover::after {
+  background: var(--accent-9);
+}
+
+.handle:hover {
+  background: var(--ui-accent-line);
+}

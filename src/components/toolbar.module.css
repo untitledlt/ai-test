@@ -1,0 +1,24 @@
+/* Radix ghost buttons carry negative margins so they align with text; in a toolbar that collapses the gaps. */
+.action {
+  margin: 0;
+  height: var(--space-6);
+  padding: 0 var(--space-3);
+}
+
+.iconAction {
+  margin: 0;
+}
+
+.mobileOnly {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .desktopOnly {
+    display: none;
+  }
+
+  .mobileOnly {
+    display: block;
+  }
+}

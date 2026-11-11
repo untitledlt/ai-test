@@ -1,0 +1,19 @@
+/*
+ * Semantic aliases over Radix Themes variables.
+ * Radix defines its scales on `.radix-themes` (per light/dark appearance), so aliases must
+ * be declared there too — declaring them on :root would resolve before the theme applies.
+ */
+.radix-themes {
+  --ui-surface: var(--color-panel-solid);
+  --ui-surface-muted: var(--gray-a2);
+  --ui-surface-hover: var(--gray-a3);
+  --ui-border: var(--gray-a5);
+  --ui-border-subtle: var(--gray-a4);
+  --ui-accent-line: var(--accent-a6);
+  --ui-danger-bg: var(--red-a3);
+  --ui-danger-text: var(--red-11);
+  --ui-overlay: var(--color-overlay);
+  --ui-radius-sm: var(--radius-2);
+  --ui-radius-md: var(--radius-3);
+  --ui-mono: var(--code-font-family, monospace);
+}

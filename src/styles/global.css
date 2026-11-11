@@ -1,0 +1,21 @@
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--indigo-2);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Slim, unobtrusive scrollbars */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--gray-a6) transparent;
+}

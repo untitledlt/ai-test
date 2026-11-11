@@ -1,0 +1,204 @@
+.wrapper {
+  min-width: 0;
+  overflow: auto;
+  flex: 1;
+  border: 1px solid var(--gray-a5);
+  border-radius: var(--radius-3);
+  background: var(--color-panel-solid);
+}
+
+.table {
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  font-size: 13px;
+}
+
+.table th,
+.table td {
+  border-bottom: 1px solid var(--gray-a3);
+  padding: 10px 12px;
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.labelCol {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: var(--color-panel-solid);
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--gray-10);
+  width: 150px;
+  white-space: nowrap;
+}
+
+.headerCell {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--color-panel-solid);
+  border-bottom: 1px solid var(--gray-a5) !important;
+}
+
+.headerCell.labelCol {
+  z-index: 3;
+}
+
+.summaryRow td {
+  background: var(--gray-a2);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  vertical-align: middle;
+}
+
+.summaryRow .labelCol {
+  background: var(--gray-2);
+}
+
+.excludedCol {
+  opacity: 0.45;
+}
+
+.contentBlock {
+  white-space: pre-wrap;
+  display: block;
+  font-size: 12.5px;
+  line-height: 1.5;
+  background: transparent;
+  border-radius: var(--radius-2);
+  padding: 8px 10px;
+}
+
+.errorBlock {
+  background: var(--red-a3);
+  border-radius: var(--radius-2);
+  padding: 6px;
+}
+
+.table td.responseCell {
+  height: 1px;
+}
+
+.responseCell[data-test-status='passed'] {
+  background-color: var(--green-a2);
+}
+
+.responseCell[data-test-status='failed'] {
+  background-color: var(--red-a2);
+}
+
+.responseBody {
+  position: relative;
+  height: 100%;
+}
+
+.withReasoning > .contentBlock {
+  padding-right: 28px;
+}
+
+.checkResults {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: 14px;
+}
+
+.checkPass,
+.checkFail {
+  border: 1px solid;
+  border-radius: var(--radius-2);
+  overflow: hidden;
+}
+
+.checkPass {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 8px 10px;
+  color: var(--green-11);
+  background: var(--green-a2);
+  border-color: var(--green-a5);
+}
+
+.checkFail {
+  color: var(--red-11);
+  background: var(--red-a2);
+  border-color: var(--red-a5);
+}
+
+.checkPass svg,
+.checkFail svg {
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.checkFail summary {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 8px 10px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.checkFail summary::-webkit-details-marker {
+  display: none;
+}
+
+.checkFail summary:focus-visible {
+  outline: 2px solid var(--red-8);
+  outline-offset: -2px;
+}
+
+.checkChevron {
+  margin-left: auto;
+}
+
+.checkFail[open] .checkChevron {
+  transform: rotate(180deg);
+}
+
+.checkMessage {
+  border-top: 1px solid var(--red-a4);
+  padding: 8px 10px;
+  white-space: pre-wrap;
+}
+
+.reasoningIcon {
+  position: absolute;
+  top: 8px;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border-radius: var(--radius-2);
+  background: var(--accent-3);
+  box-shadow: inset 0 0 0 1px var(--accent-6);
+  color: var(--accent-9);
+  cursor: help;
+}
+
+.reasoningIcon:hover {
+  background: var(--accent-4);
+  color: var(--accent-11);
+}
+
+.reasoningTooltip {
+  max-width: 320px;
+  max-height: 220px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.reasoningTooltip :global(.rt-TooltipText) {
+  white-space: pre-wrap;
+}

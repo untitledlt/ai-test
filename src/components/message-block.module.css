@@ -1,0 +1,20 @@
+.block {
+  border: 1px solid var(--gray-a5);
+  border-radius: var(--radius-3);
+  padding: 14px;
+  margin-bottom: 12px;
+  background: var(--gray-2);
+}
+
+.toolCallBlock {
+  background: var(--gray-a3);
+  border-radius: var(--radius-2);
+  padding: 8px;
+  overflow-x: auto;
+}
+
+.textarea textarea {
+  resize: vertical;
+  min-height: 60px;
+  font-family: var(--code-font-family, monospace);
+}
